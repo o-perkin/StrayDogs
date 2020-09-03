@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'favorites/update', defaults: { format: 'js' }
   get '/my_list', to: 'dogs#my_list'  
   get 'my_favorites', to: 'dogs#favorites'  
+
 end

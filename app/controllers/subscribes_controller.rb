@@ -58,7 +58,7 @@ class SubscribesController < ApplicationController
 
     def send_email(user, subscriptions, action)
       UserMailer.email_after_subscribing(user, subscriptions).deliver
-      redirect_to subscribes_path, notice: "Subscribe was successfully #{action}."
+      redirect_to subscribes_url, notice: "Subscribe was successfully #{action}."
     end
 
     def subscribe_params

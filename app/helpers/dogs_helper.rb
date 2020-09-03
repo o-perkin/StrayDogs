@@ -36,4 +36,6 @@ module DogsHelper
     def set_css_class(column)
       "flex-sm-fill text-sm-center nav-link#{" dropdown-toggle active" if column == sort_column}"
     end   
+
+   
 end
